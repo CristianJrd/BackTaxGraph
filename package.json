@@ -43,14 +43,6 @@
     "start-prod": "nodemon ./dist/server.js",
     "tslint-check": "tslint-config-prettier-check ./tslint.json"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daniele-zurico/graphql-setup"
-  },
-  "author": "Daniele Zurico",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/daniele-zurico/graphql-setup"
-  },
-  "homepage": "https://github.com/daniele-zurico/graphql-setup#readme"
+  "author": "Cristian Contreras",
+  "license": "MIT"
 }
