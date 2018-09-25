@@ -1,4 +1,4 @@
-import { client } from "../server";
+/* import { client } from "../server";
 import { CLIENT_ID } from "../common/util/secrets";
 import { User } from "./user.model";
 
@@ -42,3 +42,4 @@ const userController = {
 };
 
 export { userController };
+ */

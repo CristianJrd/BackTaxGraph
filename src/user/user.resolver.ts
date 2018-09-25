@@ -1,4 +1,4 @@
-import { AuthenticationError } from "apollo-server";
+/* import { AuthenticationError } from "apollo-server";
 import { userController } from "./user.controller";
 import { pubsub } from "../server";
 
@@ -31,3 +31,4 @@ const userResolver = {
 };
 
 export { userResolver };
+ */

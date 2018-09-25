@@ -8,16 +8,16 @@ import { GraphQLSchema } from "graphql";
 import { mergeSchemas } from "graphql-tools";
 import {Device} from './post/post.model'
 import {Message} from './messages/messages.model'
-const { OAuth2Client } = require("google-auth-library");
+// const { OAuth2Client } = require("google-auth-library");
 
-import dotenv from "dotenv";
+/* import dotenv from "dotenv";
 import {
 	CLIENT_ID,
 	DB_NAME,
 	MONGO_PORT,
 	MONGO_URL
 } from "./common/util/secrets";
-import { userController } from "./user/user.controller";
+import { userController } from "./user/user.controller"; */
 import schemas from "./schema";
 import resolvers from "./resolvers";
 
@@ -40,9 +40,9 @@ export const pubsub = new PubSub();
 const app = express();
 const PORT = process.env.PORT || 4000
 // Load environment variables from .env file, where API keys and passwords are configured
-dotenv.config({ path: ".env" });
+// dotenv.config({ path: ".env" });
 
-export const client = new OAuth2Client(CLIENT_ID);
+// export const client = new OAuth2Client(CLIENT_ID);
 // help to debug mongoose
 mongoose.set("debug", true);
 
@@ -132,7 +132,7 @@ app.get('/',(req,res) => {
 // GraphQL
 const server = new ApolloServer({
     schema,
-	context: async ({ req }: any) => {
+/* 	context: async ({ req }: any) => {
 		if (!req || !req.headers) {
 			return;
 		}
@@ -143,7 +143,7 @@ const server = new ApolloServer({
 			return { user: checkToken, authorized: true };
 		}
 		return checkToken;
-	},
+	}, */
 	tracing: true
 });
 
