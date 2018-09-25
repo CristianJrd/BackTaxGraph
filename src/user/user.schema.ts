@@ -1,4 +1,4 @@
-/* import {
+import {
 	addMockFunctionsToSchema,
 	gql,
 	makeExecutableSchema
@@ -13,4 +13,3 @@ const userSchema: GraphQLSchema = makeExecutableSchema({
 addMockFunctionsToSchema({ schema: userSchema });
 
 export { userSchema };
- */

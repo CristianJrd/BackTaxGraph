@@ -1,4 +1,4 @@
-/* import { createLogger, format, transports } from "winston";
+import { createLogger, format, transports } from "winston";
 const { combine, timestamp, label, prettyPrint } = format;
 
 enum LoggerLevel {
@@ -33,4 +33,3 @@ if (process.env.NODE_ENV !== "production") {
 	logger.debug("Logging initialized at debug level");
 }
 export default logger;
- */
